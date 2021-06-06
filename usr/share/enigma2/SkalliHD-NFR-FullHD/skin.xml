@@ -5479,6 +5479,36 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
     <widget name="key_menu" backgroundColor="Background" font="Regular;30" position="1591,1020" size="240,35" transparent="1" zPosition="1" foregroundColor="Text1" />
     <ePixmap name="new ePixmap" pixmap="SkalliHD-NFR-FullHD/buttons/menu.png" position="1490,1020" size="100,35" alphatest="blend" transparent="0" />
   </screen>
+    <screen backgroundColor="background" flags="wfNoBorder" name="LCDSkinSelector" position="0,0" size="1920,1080" transparent="0" title="Lcd Skin Selector" zPosition="-1">
+    <eLabel backgroundColor="black" foregroundColor="Text1" name="" position="0,0" size="1920,1080" zPosition="-10" />
+    <ePixmap name="new ePixmap" pixmap="SkalliHD-NFR-FullHD/extensions/back.png" position="0,0" size="1920,1080" transparent="0" zPosition="-5" />
+    <widget name="lab3" position="68,803" size="700,30" font="Regular;24" halign="center" backgroundColor="background" transparent="1" foregroundColor="selectedFG" />
+    <widget name="SkinList" position="77,180" size="700,380" enableWrapAround="1" scrollbarMode="showAlways" sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1" />
+    <widget name="Preview" position="295,596" size="220,175" zPosition="2" backgroundColor="background" transparent="1" alphatest="on" />
+    <!-- /*Uhr-->
+    <panel name="template_Clock" />
+    <!--TV-Bild mit Rahmen groß */-->
+    <panel name="template_TV" />
+    <eLabel backgroundColor="background" font="Regular; 42" halign="left" position="70,29" size="800,50" text="Choose your Skin" transparent="1" zPosition="1" />
+    <!-- /*Buttons-->
+    <ePixmap name="Button" pixmap="SkalliHD-NFR-FullHD/buttons/key_exit.png" position="1615,1020" size="100,35" alphatest="blend" transparent="0" />
+    <ePixmap name="new ePixmap" pixmap="SkalliHD-NFR-FullHD/buttons/key_ok.png" position="1490,1020" size="100,35" alphatest="blend" transparent="0" />
+  </screen>
+  <screen backgroundColor="background" flags="wfNoBorder" name="LCDClockSelector" position="0,0" size="1920,1080" transparent="0" title="Lcd Clock Selector" zPosition="-1">
+    <eLabel backgroundColor="black" foregroundColor="Text1" name="" position="0,0" size="1920,1080" zPosition="-10" />
+    <ePixmap name="new ePixmap" pixmap="SkalliHD-NFR-FullHD/extensions/back.png" position="0,0" size="1920,1080" transparent="0" zPosition="-5" />
+    <widget name="lab3" position="68,803" size="700,30" font="Regular;24" halign="center" backgroundColor="background" transparent="1" foregroundColor="selectedFG" />
+    <widget name="ClockList" position="77,180" size="700,380" enableWrapAround="1" scrollbarMode="showAlways" sliderPixmap="menu/Scrollbar.png" alphatest="blend" transparent="1" />
+    <widget name="Preview" position="295,596" size="220,175" zPosition="2" backgroundColor="background" transparent="1" alphatest="on" />
+    <!-- /*Uhr-->
+    <panel name="template_Clock" />
+    <!--TV-Bild mit Rahmen groß */-->
+    <panel name="template_TV" />
+    <eLabel backgroundColor="background" font="Regular; 42" halign="left" position="70,29" size="800,50" text="Choose your Skin" transparent="1" zPosition="1" />
+    <!-- /*Buttons-->
+    <ePixmap name="Button" pixmap="SkalliHD-NFR-FullHD/buttons/key_exit.png" position="1615,1020" size="100,35" alphatest="blend" transparent="0" />
+    <ePixmap name="new ePixmap" pixmap="SkalliHD-NFR-FullHD/buttons/key_ok.png" position="1490,1020" size="100,35" alphatest="blend" transparent="0" />
+  </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="Screen Vorlage" position="0,0" size="1920,1080" title="Screen Vorlage">
     <panel name="template_layout" />
     <widget enableWrapAround="1" position="11,119" render="Listbox" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="800,540" source="menu" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" transparent="1">
